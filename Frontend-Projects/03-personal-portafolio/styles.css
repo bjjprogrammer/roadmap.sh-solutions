@@ -1,0 +1,129 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Aplica la fuente a otros elementos según sea necesario */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    padding: 20px;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+
+
+.flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.projects ul {
+    padding: 0px;
+    list-style-type: none;
+}
+
+.projects li {
+    margin: 10px 0;
+}
+
+.work-experience {
+    display: flex;
+    flex-direction: column;
+}
+
+.work-experience article {
+    display: flex;
+    flex-direction: column;
+}
+
+.aside-content {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+aside blockquote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h2 {
+        text-align: center;
+    }
+    .projects ul {
+       text-align: center;
+    }
+    .flex-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .projects {
+        width: 100%;
+    }
+
+    .aside-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .footer {
+        position: static;
+    }
+}
+
